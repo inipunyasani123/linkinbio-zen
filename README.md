@@ -2,7 +2,7 @@
 
 Tautan Sena, guru mindfulness di Bandung: kelas meditasi daring Selasa dan Kamis, retret Lembang 14–15 November 2026, dan latihan napas terpandu tiga menit.
 
-**Demo live:** https://linkinbio-zen.vercel.app
+**Demo live:** https://linkinbio-zen.pintuweb.id
 
 ![Tangkapan layar Sena](public/og.jpg)
 

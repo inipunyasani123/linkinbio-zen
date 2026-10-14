@@ -4,10 +4,10 @@ import "./globals.css";
 const cormorant = Cormorant_Garamond({ subsets: ["latin"], variable: "--font-cormorant", weight: ["400", "500", "600"], style: ["normal", "italic"] });
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
-const __jsonld = {"@context":"https://schema.org","@type":"ProfilePage","mainEntity":{"@type":"Person","name":"Sena","jobTitle":"Guru Mindfulness","url":"https://linkinbio-zen.vercel.app","inLanguage":"id"}};
+const __jsonld = {"@context":"https://schema.org","@type":"ProfilePage","mainEntity":{"@type":"Person","name":"Sena","jobTitle":"Guru Mindfulness","url":"https://linkinbio-zen.pintuweb.id","inLanguage":"id"}};
 
 export const metadata = {
-  metadataBase: new URL("https://linkinbio-zen.vercel.app"),
+  metadataBase: new URL("https://linkinbio-zen.pintuweb.id"),
   title: { default: "Sena — Guru Mindfulness & Teman Minum Teh", template: "%s — Sena" },
   description: "Tautan Sena, guru mindfulness di Bandung: kelas meditasi daring Selasa dan Kamis, retret Lembang 14–15 November 2026, dan latihan napas terpandu tiga menit.",
   applicationName: "Sena",
@@ -15,11 +15,11 @@ export const metadata = {
   authors: [{ name: "Sena" }],
   creator: "Sena",
   publisher: "Sena",
-  alternates: { canonical: "https://linkinbio-zen.vercel.app" },
+  alternates: { canonical: "https://linkinbio-zen.pintuweb.id" },
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://linkinbio-zen.vercel.app",
+    url: "https://linkinbio-zen.pintuweb.id",
     siteName: "Sena",
     title: "Sena — Guru Mindfulness & Teman Minum Teh",
     description: "Tautan Sena, guru mindfulness di Bandung: kelas meditasi daring Selasa dan Kamis, retret Lembang 14–15 November 2026, dan latihan napas terpandu tiga menit.",
