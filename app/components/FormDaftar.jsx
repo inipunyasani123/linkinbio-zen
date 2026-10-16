@@ -19,7 +19,7 @@ export default function FormDaftar() {
     if (h === 'undang') setPilih('tim');
   }, []);
   const p = PILIHAN.find((x) => x.id === pilih);
-  const input = 'w-full border-b border-sumi/30 bg-transparent py-2 focus:border-matcha-ink focus:outline-none';
+  const input = 'w-full border-b border-sumi/60 bg-transparent py-2 focus:border-matcha-ink';
 
   return (
     <section id="undang" aria-labelledby="daftar-h" className="mt-16 scroll-mt-8 bg-white px-6 py-8">
@@ -28,20 +28,20 @@ export default function FormDaftar() {
         <div role="status" className="mt-4">
           <p className="font-serif text-2xl italic">Terima kasih. Sampai bertemu di napas berikutnya.</p>
           <p className="mt-2 text-sm text-sumi/75">Ini purwarupa desain: tidak ada pendaftaran yang benar-benar dibuat.</p>
-          <button type="button" onClick={() => setSelesai(false)} className="mt-5 border-b border-sumi/40 text-sm hover:text-matcha-ink">Daftar lagi</button>
+          <button type="button" onClick={() => setSelesai(false)} className="mt-5 min-h-11 border-b border-sumi/40 text-sm hover:text-matcha-ink">Daftar lagi</button>
         </div>
       ) : (
         <form onSubmit={(e) => { e.preventDefault(); setSelesai(true); }} className="mt-6 space-y-6">
           <fieldset>
             <legend className="text-xs uppercase tracking-[0.25em] text-sumi/70">Pilih</legend>
-            <div className="mt-3 space-y-2">
+            <div className="mt-2">
               {PILIHAN.map((x) => (
-                <label key={x.id} className="flex cursor-pointer items-baseline justify-between gap-3 border-b border-sumi/10 pb-2">
-                  <span className="flex items-baseline gap-3">
-                    <input type="radio" name="pilih" value={x.id} checked={pilih === x.id} onChange={() => setPilih(x.id)} className="accent-[#55623b]" />
+                <label key={x.id} className="flex min-h-11 cursor-pointer items-center justify-between gap-3 border-b border-sumi/10 py-1.5">
+                  <span className="flex items-center gap-3">
+                    <input type="radio" name="pilih" value={x.id} checked={pilih === x.id} onChange={() => setPilih(x.id)} className="h-4 w-4 shrink-0 accent-[#55623b]" />
                     <span className="font-serif text-xl">{x.nama}</span>
                   </span>
-                  <span className="text-sm text-sumi/75">{x.harga ? rp(x.harga) : 'harga setelah ngobrol'}</span>
+                  <span className="shrink-0 text-right text-sm text-sumi/75">{x.harga ? rp(x.harga) : 'setelah ngobrol'}</span>
                 </label>
               ))}
             </div>

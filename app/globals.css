@@ -27,4 +27,17 @@ h1, h2, h3 { font-family: var(--font-serif); font-weight: 500; }
 
 .hairline { border-color: rgba(43, 42, 38, 0.14); }
 
-:focus-visible { outline: 1.5px solid var(--color-matcha); outline-offset: 4px; }
+:focus-visible { outline: 2px solid var(--color-matcha-ink); outline-offset: 4px; }
+
+/* Hormati pilihan "kurangi gerakan": konten langsung tampil, hiasan berhenti.
+   Lingkaran napas tidak lagi membesar-mengecil; hanya kepekatannya yang berubah. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 1ms !important;
+    animation-delay: 0s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+    scroll-behavior: auto !important;
+  }
+  .napas-lingkar { transform: scale(0.85) !important; }
+}

@@ -1,10 +1,12 @@
 import { KELAS, PAKET, RETRET, SITE, rp } from '@/lib/zen';
+import { hariIniWIB } from '@/lib/waktu';
 import Kembali from '../components/Kembali';
 import FormDaftar from '../components/FormDaftar';
+import TanggalRetret from '../components/TanggalRetret';
 
 export const metadata = {
   title: 'Kelas & Retret',
-  description: 'Kelas meditasi daring Sena tiap Selasa malam dan Kamis pagi, retret akhir pekan di Lembang 14–15 November 2026, dan sesi untuk tim.',
+  description: 'Kelas meditasi daring Sena tiap Selasa malam dan Kamis pagi, paket delapan pertemuan, retret akhir pekan di Lembang, dan sesi untuk tim.',
   alternates: { canonical: `${SITE}/kelas` },
 };
 
@@ -32,7 +34,7 @@ export default function Kelas() {
 
         <section id="retret" aria-labelledby="retret-h" className="mt-16 scroll-mt-8">
           <h2 id="retret-h" className="font-serif text-4xl">Retret akhir pekan</h2>
-          <p className="mt-2 text-sm uppercase tracking-[0.2em] text-sumi/70">{RETRET.tanggal}</p>
+          <p className="mt-2 text-sm uppercase tracking-[0.2em] text-sumi/70"><TanggalRetret hari={hariIniWIB()} /></p>
           <p className="mt-3 leading-relaxed text-sumi/80">{RETRET.tempat}. Dua hari tanpa sinyal kerja, dua belas orang, satu teko teh yang tidak pernah kosong.</p>
           <ol className="mt-6 border-l border-sumi/20 pl-6">
             {RETRET.acara.map(([w, a]) => (

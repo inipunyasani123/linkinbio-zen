@@ -9,7 +9,7 @@ const __jsonld = {"@context":"https://schema.org","@type":"ProfilePage","mainEnt
 export const metadata = {
   metadataBase: new URL("https://linkinbio-zen.pintuweb.id"),
   title: { default: "Sena — Guru Mindfulness & Teman Minum Teh", template: "%s — Sena" },
-  description: "Tautan Sena, guru mindfulness di Bandung: kelas meditasi daring Selasa dan Kamis, retret Lembang 14–15 November 2026, dan latihan napas terpandu tiga menit.",
+  description: "Tautan Sena, guru mindfulness di Bandung: kelas meditasi daring Selasa dan Kamis, retret akhir pekan di Lembang, dan latihan napas terpandu tiga menit.",
   applicationName: "Sena",
   keywords: ["kelas meditasi daring", "mindfulness bandung", "latihan napas", "retret lembang", "link in bio meditasi"],
   authors: [{ name: "Sena" }],
@@ -22,13 +22,13 @@ export const metadata = {
     url: "https://linkinbio-zen.pintuweb.id",
     siteName: "Sena",
     title: "Sena — Guru Mindfulness & Teman Minum Teh",
-    description: "Tautan Sena, guru mindfulness di Bandung: kelas meditasi daring Selasa dan Kamis, retret Lembang 14–15 November 2026, dan latihan napas terpandu tiga menit.",
+    description: "Tautan Sena, guru mindfulness di Bandung: kelas meditasi daring Selasa dan Kamis, retret akhir pekan di Lembang, dan latihan napas terpandu tiga menit.",
     images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Sena — Guru Mindfulness & Teman Minum Teh" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Sena — Guru Mindfulness & Teman Minum Teh",
-    description: "Tautan Sena, guru mindfulness di Bandung: kelas meditasi daring Selasa dan Kamis, retret Lembang 14–15 November 2026, dan latihan napas terpandu tiga menit.",
+    description: "Tautan Sena, guru mindfulness di Bandung: kelas meditasi daring Selasa dan Kamis, retret akhir pekan di Lembang, dan latihan napas terpandu tiga menit.",
     images: ["/og.jpg"],
   },
   robots: {

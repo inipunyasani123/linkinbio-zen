@@ -1,6 +1,6 @@
 # Sena — Guru Mindfulness & Teman Minum Teh
 
-Tautan Sena, guru mindfulness di Bandung: kelas meditasi daring Selasa dan Kamis, retret Lembang 14–15 November 2026, dan latihan napas terpandu tiga menit.
+Tautan Sena, guru mindfulness di Bandung: kelas meditasi daring Selasa dan Kamis, retret akhir pekan di Lembang, dan latihan napas terpandu tiga menit.
 
 **Demo live:** https://linkinbio-zen.pintuweb.id
 
