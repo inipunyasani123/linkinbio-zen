@@ -1,6 +1,7 @@
 import { KELAS, PAKET, RETRET, SITE, rp } from '@/lib/zen';
 import { hariIniWIB } from '@/lib/waktu';
 import Kembali from '../components/Kembali';
+import Gambar from '../components/Gambar';
 import FormDaftar from '../components/FormDaftar';
 import TanggalRetret from '../components/TanggalRetret';
 
@@ -17,6 +18,7 @@ export default function Kelas() {
         <Kembali />
         <h1 className="rise mt-10 font-serif text-5xl">Kelas</h1>
         <p className="rise mt-3 leading-relaxed text-sumi/75" style={{ animationDelay: '0.1s' }}>Tidak perlu bisa duduk bersila. Cukup datang, kamera boleh mati.</p>
+        <Gambar src="/images/teh.webp" alt="Tangan menuang teh dari teko putih ke cangkir kecil di atas nampan kayu" width={1200} height={800} asli={1200} priority sizes="(min-width: 640px) 576px, calc(100vw - 48px)" className="mt-8 aspect-[3/2] w-full rounded-sm object-cover" />
 
         <ol className="mt-10">
           {KELAS.map((k, i) => (
@@ -35,7 +37,8 @@ export default function Kelas() {
         <section id="retret" aria-labelledby="retret-h" className="mt-16 scroll-mt-8">
           <h2 id="retret-h" className="font-serif text-4xl">Retret akhir pekan</h2>
           <p className="mt-2 text-sm uppercase tracking-[0.2em] text-sumi/70"><TanggalRetret hari={hariIniWIB()} /></p>
-          <p className="mt-3 leading-relaxed text-sumi/80">{RETRET.tempat}. Dua hari tanpa sinyal kerja, dua belas orang, satu teko teh yang tidak pernah kosong.</p>
+          <Gambar src="/images/retret-lembang.webp" alt="Rumah kebun di antara pohon pisang dan rimbun hijau, dengan bukit berkabut di belakangnya" width={1200} height={800} asli={1200} sizes="(min-width: 640px) 576px, calc(100vw - 48px)" className="mt-5 aspect-[3/2] w-full rounded-sm object-cover" />
+          <p className="mt-5 leading-relaxed text-sumi/80">{RETRET.tempat}. Dua hari tanpa sinyal kerja, dua belas orang, satu teko teh yang tidak pernah kosong.</p>
           <ol className="mt-6 border-l border-sumi/20 pl-6">
             {RETRET.acara.map(([w, a]) => (
               <li key={w} className="relative pb-5 last:pb-0">

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Gambar from './components/Gambar';
 import { ArrowUpRight } from 'lucide-react';
 import { LINKS } from '@/lib/zen';
 import { hariIniWIB } from '@/lib/waktu';
@@ -9,9 +10,9 @@ export default function Home() {
   return (
     <main className="flex min-h-screen items-center justify-center px-6 py-16">
       <div className="w-full max-w-sm text-center">
-        <div className="rise relative mx-auto h-24 w-24" aria-hidden="true">
-          <span className="breathe absolute inset-0 rounded-full border border-sumi/40" />
-          <span className="absolute inset-3 grid place-items-center rounded-full bg-matcha/10 font-serif text-3xl italic text-matcha-ink">禅</span>
+        <div className="rise relative mx-auto h-28 w-28">
+          <span className="breathe absolute inset-0 rounded-full border border-sumi/40" aria-hidden="true" />
+          <Gambar src="/images/sena.webp" alt="Potret tinta Sena dengan mata terpejam di dalam lingkaran ensō" width={100} height={100} loading="eager" className="absolute inset-1.5 h-[100px] w-[100px] rounded-full" />
         </div>
 
         <header className="rise mt-8" style={{ animationDelay: '0.08s' }}>
